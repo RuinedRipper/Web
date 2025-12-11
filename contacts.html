@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Форма зворотного зв'язку та наші контакти." />
+  <title>Лабораторна 2 - Контакти</title>
+  <link rel="icon" href="assets/images/favicon.ico" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+  <header class="site-header">
+    <h1 class="site-title">Мій перший лендинг</h1>
+    <nav class="main-nav" aria-label="Головна навігація">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Зв'яжіться з нами</h2>
+
+    <!-- Форма зворотного зв'язку -->
+    <form action="#" method="post">
+      <!-- Ім'я -->
+      <div class="form-row">
+        <label for="name">Ім'я *</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Ваше ім'я"
+          required
+          minlength="2"
+          maxlength="50"
+          pattern="[A-Za-zА-Яа-яЇїІіЄєҐґ' -]+"
+          title="Ім'я може містити лише літери, пробіли, апостроф та дефіс."
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="form-row">
+        <label for="email">Email *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+      </div>
+
+      <!-- Телефон -->
+      <div class="form-row">
+        <label for="phone">Телефон *</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+380XXXXXXXXX"
+          required
+          pattern="\+?380[0-9]{9}"
+          title="Введіть номер у форматі +380XXXXXXXXX"
+        />
+      </div>
+
+      <!-- Повідомлення -->
+      <div class="form-row">
+        <label for="msg">Повідомлення</label>
+        <textarea
+          id="msg"
+          name="message"
+          placeholder="Ваше повідомлення"
+          rows="4"
+          maxlength="1000"
+        ></textarea>
+      </div>
+
+      <!-- Кнопка -->
+      <div class="form-row">
+        <button type="submit">Надіслати</button>
+      </div>
+    </form>
+
+    <!-- Наші контакти -->
+    <section aria-labelledby="contacts-title">
+      <h3 id="contacts-title">Наші контакти</h3>
+      <p><strong>Email:</strong> yourmail@example.com</p>
+      <p><strong>Телефон:</strong> +38 (0XX) XXX-XX-XX</p>
+      <p><strong>Адреса:</strong> м. Ваше місто, вул. Прикладна, 1</p>
+    </section>
+
+    <!-- Соціальні мережі -->
+    <aside aria-label="Наші соціальні мережі">
+      <h3>Ми в соцмережах</h3>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com"
+             target="_blank"
+             rel="noopener noreferrer"
+          >Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com"
+             target="_blank"
+             rel="noopener noreferrer"
+          >Instagram</a>
+        </li>
+        <li>
+          <a href="https://t.me"
+             target="_blank"
+             rel="noopener noreferrer"
+          >Telegram</a>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Група ПІ: гр. 6.1214-с2</p>
+    <p>Виконав(ла): Ушаков Ростислав</p>
+  </footer>
+</body>
+</html>
